@@ -11,5 +11,19 @@
 
     <artifactId>spring-boot-01-helloworld</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+    <!--将应用打包成一个可执行的jar包-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
